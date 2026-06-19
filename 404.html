@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page not found | A Plus Scaffolding</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#161618">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700;800&display=swap">
+<style>
+:root{--charcoal:#161618;--orange:#F46D16;--orange-hi:#ff8a3d;--mist:#9b9ba2;--line:#34343a;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{
+  font-family:'Archivo',sans-serif;background:var(--charcoal);color:#fff;
+  min-height:100vh;display:flex;flex-direction:column;
+  -webkit-font-smoothing:antialiased;
+}
+.hazard{height:14px;background:repeating-linear-gradient(-45deg,var(--orange) 0 22px,var(--charcoal) 22px 44px);}
+main{flex:1;display:flex;align-items:center;justify-content:center;text-align:center;padding:40px 24px;}
+.box{max-width:520px;}
+.code{font-family:'Anton',sans-serif;font-size:clamp(4rem,18vw,8rem);line-height:1;color:var(--orange);letter-spacing:.02em;}
+h1{font-family:'Anton',sans-serif;text-transform:uppercase;font-size:clamp(1.6rem,5vw,2.4rem);margin:8px 0 14px;font-weight:400;}
+p{color:var(--mist);font-size:1.05rem;margin-bottom:28px;}
+.btn{
+  font-family:'Anton',sans-serif;font-size:1.05rem;letter-spacing:.03em;text-transform:uppercase;
+  background:var(--orange);color:var(--charcoal);padding:15px 26px;display:inline-flex;align-items:center;gap:9px;
+  transition:background .15s;
+}
+.btn:hover{background:var(--orange-hi);}
+.btn.ghost{background:transparent;color:#fff;border:1.5px solid var(--line);margin-left:10px;}
+.btn.ghost:hover{border-color:var(--orange);color:var(--orange);}
+a{text-decoration:none;color:inherit;}
+.row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;}
+</style>
+</head>
+<body>
+<div class="hazard"></div>
+<main>
+  <div class="box">
+    <div class="code">404</div>
+    <h1>This page took a different route</h1>
+    <p>The page you&rsquo;re after isn&rsquo;t here. Head back home, or give us a call for a fast quote.</p>
+    <div class="row">
+      <a href="/" class="btn">Back to home</a>
+      <a href="tel:+61433676716" class="btn ghost">&#9742;&nbsp;Call +61 433 676 716</a>
+    </div>
+  </div>
+</main>
+<div class="hazard"></div>
+</body>
+</html>
