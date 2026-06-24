@@ -6,7 +6,7 @@
 
 <!-- ============ SEO ============ -->
 <title>Scaffolding South Coast NSW | A Plus Scaffolding (Eden to Ulladulla)</title>
-<meta name="description" content="On time. Safe. Done right — so your site keeps moving. Residential and construction scaffolding across the South Coast (Eden to Ulladulla). Call +61 433 676 716 for a fast quote.">
+<meta name="description" content="On time. Safe. Done right - so your site keeps moving. Residential and construction scaffolding across the South Coast (Eden to Ulladulla). Call +61 433 676 716 for a fast quote.">
 <meta name="theme-color" content="#161618">
 <link rel="canonical" href="https://aplusscaffolding.com.au/">
 
@@ -15,14 +15,14 @@
 
 <!-- Open Graph / social sharing -->
 <meta property="og:title" content="A Plus Scaffolding | South Coast NSW">
-<meta property="og:description" content="On time. Safe. Done right — so your site keeps moving. Residential & construction scaffolding, Eden to Ulladulla.">
+<meta property="og:description" content="On time. Safe. Done right - so your site keeps moving. Residential & construction scaffolding, Eden to Ulladulla.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://aplusscaffolding.com.au/">
 <meta property="og:image" content="https://aplusscaffolding.com.au/assets/og-image.png">
 <meta property="og:locale" content="en_AU">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="A Plus Scaffolding | South Coast NSW">
-<meta name="twitter:description" content="On time. Safe. Done right — so your site keeps moving. Residential & construction scaffolding, Eden to Ulladulla.">
+<meta name="twitter:description" content="On time. Safe. Done right - so your site keeps moving. Residential & construction scaffolding, Eden to Ulladulla.">
 <meta name="twitter:image" content="https://aplusscaffolding.com.au/assets/og-image.png">
 
 <!-- ============ FONTS ============ -->
@@ -60,7 +60,7 @@ To activate: (1) create a GA4 property and copy its Measurement ID,
   "telephone": "+61433676716",
   "email": "junior@aplusscaffolding.com.au",
   "identifier": { "@type": "PropertyValue", "propertyID": "ABN", "value": "69 657 505 069" },
-  "slogan": "On time. Safe. Done right — so your site keeps moving.",
+  "slogan": "On time. Safe. Done right - so your site keeps moving.",
   "description": "Residential and construction scaffolding across the South Coast of NSW, from Eden to Ulladulla. SWMS provided, toolbox meetings, and handover certificates on completion.",
   "geo": {
     "@type": "GeoCoordinates",
@@ -180,16 +180,16 @@ header{
 }
 .nav{
   display:flex;align-items:center;justify-content:space-between;
-  height:68px;
+  height:84px;
 }
 .brand{display:flex;align-items:center;}
 .brand-logo{
-  display:block;height:30px;width:auto;
-  background:#fff;padding:6px 10px;border-radius:3px;
+  display:block;height:48px;width:auto;
+  background:#fff;padding:7px 12px;border-radius:3px;
 }
 .foot-logo{
-  display:block;height:40px;width:auto;
-  background:#fff;padding:8px 12px;border-radius:3px;
+  display:block;height:52px;width:auto;
+  background:#fff;padding:9px 14px;border-radius:3px;
 }
 .nav-links{display:flex;gap:30px;align-items:center;}
 .nav-links a{
@@ -307,8 +307,8 @@ header{
 
 /* ============== SERVICES ============== */
 .svc-grid{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:0;
-  border:1px solid var(--line);
+  display:grid;grid-template-columns:repeat(3,1fr);gap:0;
+  border-top:1px solid var(--line);border-left:1px solid var(--line);
 }
 .svc{
   padding:34px 30px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);
@@ -387,28 +387,16 @@ header{
 
 /* ============== WORK / PHOTOS ============== */
 .photo-grid{
-  display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;
+  display:grid;grid-template-columns:repeat(3,1fr);gap:14px;
 }
 .photo{
   aspect-ratio:4/3;background:var(--charcoal-3);
-  border:1.5px dashed var(--line);
-  display:flex;flex-direction:column;justify-content:flex-end;
-  padding:14px;position:relative;overflow:hidden;
+  border:1.5px solid var(--line);
+  overflow:hidden;
 }
-/* subtle hazard-stripe accent so empty tiles still read as on-brand */
-.photo::before{
-  content:"";position:absolute;inset:0;opacity:.10;pointer-events:none;
-  background:repeating-linear-gradient(-45deg,var(--orange) 0 14px,transparent 14px 28px);
+.photo img{
+  width:100%;height:100%;object-fit:cover;display:block;
 }
-.photo .ph-lbl{
-  position:absolute;top:12px;left:12px;
-  font-size:.66rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
-  color:var(--mist);
-}
-.photo .cap{
-  font-size:.86rem;font-weight:700;color:#cfcfd4;position:relative;z-index:2;
-}
-.photo .cap small{display:block;font-weight:500;color:var(--mist);font-size:.74rem;}
 .photo-sub{margin-bottom:34px;font-size:1.04rem;color:var(--mist);margin-top:-30px;}
 
 /* ============== REVIEWS ============== */
@@ -515,7 +503,7 @@ footer{background:var(--charcoal);border-top:1px solid var(--line);padding:46px 
 /* ============== RESPONSIVE ============== */
 @media(max-width:880px){
   .nav-links{
-    position:fixed;inset:68px 0 auto 0;flex-direction:column;gap:0;
+    position:fixed;inset:84px 0 auto 0;flex-direction:column;gap:0;
     background:var(--charcoal-2);border-bottom:1px solid var(--line);
     transform:translateY(-130%);transition:transform .28s;padding:6px 0;
     visibility:hidden;
@@ -533,6 +521,8 @@ footer{background:var(--charcoal);border-top:1px solid var(--line);padding:46px 
   .stats .wrap{grid-template-columns:1fr 1fr;}
   .stat:nth-child(2){border-right:0;}
   .stat:nth-child(1),.stat:nth-child(2){border-bottom:1px solid rgba(22,22,24,.22);}
+  .svc-grid{grid-template-columns:1fr 1fr;}
+  .photo-grid{grid-template-columns:1fr 1fr;}
   .safety-grid,.area-grid,.contact-grid{grid-template-columns:1fr;gap:34px;}
   .steps{grid-template-columns:1fr 1fr;}
   .step::after{display:none;}
@@ -543,6 +533,8 @@ footer{background:var(--charcoal);border-top:1px solid var(--line);padding:46px 
   .sec{padding:62px 0;}
   .hero{padding:60px 0 70px;}
   .steps{grid-template-columns:1fr;}
+  .svc-grid{grid-template-columns:1fr;}
+  .photo-grid{grid-template-columns:1fr;}
   .stats .wrap{grid-template-columns:1fr;}
   .stat{border-right:0;border-bottom:1px solid rgba(22,22,24,.22);}
   .form-card{padding:24px;}
@@ -589,7 +581,7 @@ footer{background:var(--charcoal);border-top:1px solid var(--line);padding:46px 
   <div class="wrap">
     <span class="hero-tag reveal"><span class="dot"></span>South Coast NSW &middot; Eden to Ulladulla</span>
     <h1 class="display reveal">Scaffolding <span class="hl">done right</span> across the South Coast NSW</h1>
-    <p class="lead reveal"><strong>On time. Safe. Done right &mdash; so your site keeps moving.</strong> Residential and construction scaffolding across the South Coast of NSW, with clear communication, reliable scheduling, and safe, compliant setups.</p>
+    <p class="lead reveal"><strong>On time. Safe. Done right - so your site keeps moving.</strong> Residential and construction scaffolding across the South Coast of NSW, with clear communication, reliable scheduling, and safe, compliant setups.</p>
     <div class="cta-row reveal">
       <a href="tel:+61433676716" class="btn btn-primary">&#9742;&nbsp;Call +61 433 676 716</a>
       <a href="#contact" class="btn btn-ghost">Request a Quote</a>
@@ -616,15 +608,20 @@ footer{background:var(--charcoal);border-top:1px solid var(--line);padding:46px 
 <section class="sec sec-dark" id="services">
   <div class="wrap">
     <div class="sec-head reveal">
-      <div class="sec-num">/ 01 &mdash; What We Do</div>
+      <div class="sec-num">/ 01 - What We Do</div>
       <h2 class="display">Scaffolding for residential, commercial, and anything in between</h2>
-      <p>A Plus Scaffolding supplies and installs scaffolding to help projects run safely and on schedule&mdash;whether it&rsquo;s a home renovation, a commercial build, or a larger construction site. We focus on tidy setups, clear access, and reliable timing so you can keep work moving.</p>
+      <p>A Plus Scaffolding supplies and installs scaffolding to help projects run safely and on schedule - whether it&rsquo;s a home renovation, a commercial build, or a larger construction site. We focus on tidy setups, clear access, and reliable timing so you can keep work moving.</p>
     </div>
     <div class="svc-grid reveal">
       <div class="svc">
         <div class="ico" aria-hidden="true">&#8962;</div>
         <h3>Residential scaffolding</h3>
         <p>Safe access for renovations, painting, roofing and home projects. Tidy setup, reliable timing.</p>
+      </div>
+      <div class="svc">
+        <div class="ico" aria-hidden="true">&#9978;</div>
+        <h3>Commercial scaffolding</h3>
+        <p>Scaffolding for shops, offices and commercial builds. Staged, compliant access.</p>
       </div>
       <div class="svc">
         <div class="ico" aria-hidden="true">&#9776;</div>
@@ -655,9 +652,9 @@ footer{background:var(--charcoal);border-top:1px solid var(--line);padding:46px 
   <div class="wrap">
     <div class="safety-grid">
       <div class="reveal">
-        <div class="sec-num">/ 02 &mdash; Safety &amp; Compliance</div>
+        <div class="sec-num">/ 02 - Safety &amp; Compliance</div>
         <h2 class="display" style="font-size:clamp(1.9rem,4.2vw,3.1rem)">Safety and compliance you can rely on</h2>
-        <p style="margin-top:14px;color:var(--mist);font-size:1.04rem">Safety isn&rsquo;t a slogan&mdash;it&rsquo;s how the job is done. We bring a consistent, documented approach to every site, so builders, site managers and homeowners have what they need without the paperwork headache.</p>
+        <p style="margin-top:14px;color:var(--mist);font-size:1.04rem">Safety isn&rsquo;t a slogan - it&rsquo;s how the job is done. We bring a consistent, documented approach to every site, so builders, site managers and homeowners have what they need without the paperwork headache.</p>
         <div class="safety-note">If your builder or site supervisor needs specific documentation, just let us know when you request a quote and we&rsquo;ll have it ready.</div>
       </div>
       <div class="safety-cards reveal">
@@ -671,7 +668,7 @@ footer{background:var(--charcoal);border-top:1px solid var(--line);padding:46px 
         </div>
         <div class="scard">
           <span class="tag">CERT</span>
-          <div><h4>Handover certificates</h4><p>A formal handover certificate is provided on completion of every scaffold install&mdash;clear, documented proof it&rsquo;s ready to use.</p></div>
+          <div><h4>Handover certificates</h4><p>A formal handover certificate is provided on completion of every scaffold install - clear, documented proof it&rsquo;s ready to use.</p></div>
         </div>
       </div>
     </div>
@@ -682,7 +679,7 @@ footer{background:var(--charcoal);border-top:1px solid var(--line);padding:46px 
 <section class="sec sec-dark" id="process">
   <div class="wrap">
     <div class="sec-head reveal">
-      <div class="sec-num">/ 03 &mdash; How It Works</div>
+      <div class="sec-num">/ 03 - How It Works</div>
       <h2 class="display">Simple process, clear communication</h2>
     </div>
     <div class="steps reveal">
@@ -701,12 +698,12 @@ footer{background:var(--charcoal);border-top:1px solid var(--line);padding:46px 
   <div class="wrap">
     <div class="area-grid">
       <div class="reveal">
-        <div class="sec-num" style="color:var(--orange)">/ 04 &mdash; Where We Work</div>
-        <h2 class="display" style="font-size:clamp(1.9rem,4.2vw,3.1rem)">Serving the South Coast &mdash; Eden to Ulladulla</h2>
-        <p style="margin-top:14px;color:#555;font-size:1.04rem">We service the NSW South Coast from Eden to Ulladulla, with a focus on reliable, on-time service across our coverage area. If your suburb isn&rsquo;t listed, give us a call&mdash;if we can help, we&rsquo;ll find a solution.</p>
+        <div class="sec-num" style="color:var(--orange)">/ 04 - Where We Work</div>
+        <h2 class="display" style="font-size:clamp(1.9rem,4.2vw,3.1rem)">Serving the South Coast - Eden to Ulladulla</h2>
+        <p style="margin-top:14px;color:#555;font-size:1.04rem">We service the NSW South Coast from Eden to Ulladulla, with a focus on reliable, on-time service across our coverage area. If your suburb isn&rsquo;t listed, give us a call - if we can help, we&rsquo;ll find a solution.</p>
         <div class="area-band">
           <div class="from-to"><em>Eden</em> &rarr; <em>Ulladulla</em></div>
-          <p>The full South Coast corridor &mdash; residential and construction.</p>
+          <p>The full South Coast corridor - residential and construction.</p>
         </div>
       </div>
       <div class="reveal">
@@ -731,24 +728,17 @@ footer{background:var(--charcoal);border-top:1px solid var(--line);padding:46px 
 <section class="sec sec-panel" id="projects">
   <div class="wrap">
     <div class="sec-head reveal">
-      <div class="sec-num">/ 05 &mdash; Recent Work</div>
+      <div class="sec-num">/ 05 - Recent Work</div>
       <h2 class="display">Recent work</h2>
     </div>
-    <p class="photo-sub reveal">A look at the kinds of work we do &mdash; tidy, safe, and on schedule. Job photos coming soon.</p>
+    <p class="photo-sub reveal">A look at recent work across the South Coast.</p>
     <div class="photo-grid reveal">
-      <!-- PLACEHOLDER TILES — no real job photos yet. Captions are generic
-           service types, NOT specific completed jobs.
-           To add a real photo, replace a tile with:
-           <a class="photo" href="assets/jobs/your-photo.jpg"><img src="assets/jobs/your-photo.jpg" alt="Job type"></a>
-           Keep 12–20 of your best, well-lit photos (under ~200kb each). -->
-      <div class="photo"><span class="ph-lbl">Photo coming soon</span><span class="cap">Residential scaffold</span></div>
-      <div class="photo"><span class="ph-lbl">Photo coming soon</span><span class="cap">Construction site scaffold</span></div>
-      <div class="photo"><span class="ph-lbl">Photo coming soon</span><span class="cap">Roof access</span></div>
-      <div class="photo"><span class="ph-lbl">Photo coming soon</span><span class="cap">Install &amp; dismantle</span></div>
-      <div class="photo"><span class="ph-lbl">Photo coming soon</span><span class="cap">Residential scaffold</span></div>
-      <div class="photo"><span class="ph-lbl">Photo coming soon</span><span class="cap">Construction site scaffold</span></div>
-      <div class="photo"><span class="ph-lbl">Photo coming soon</span><span class="cap">Roof access</span></div>
-      <div class="photo"><span class="ph-lbl">Photo coming soon</span><span class="cap">Install &amp; dismantle</span></div>
+      <div class="photo"><img src="assets/gallery/commercial-scaffolding-site.jpg" alt="Commercial construction site scaffolding on the NSW South Coast" loading="lazy" width="1200" height="675"></div>
+      <div class="photo"><img src="assets/gallery/construction-scaffolding.jpg" alt="Construction scaffolding against a blue sky" loading="lazy" width="1200" height="900"></div>
+      <div class="photo"><img src="assets/gallery/access-scaffolding-structure.jpg" alt="Access scaffolding structure on a job site" loading="lazy" width="1200" height="900"></div>
+      <div class="photo"><img src="assets/gallery/scaffolding-structure.jpg" alt="Scaffolding structure erected on site" loading="lazy" width="1200" height="900"></div>
+      <div class="photo"><img src="assets/gallery/encapsulation-scaffolding.jpg" alt="Encapsulated shrink-wrapped scaffolding" loading="lazy" width="1200" height="900"></div>
+      <div class="photo"><img src="assets/gallery/temporary-works-scaffolding.jpg" alt="Temporary works scaffolding installation" loading="lazy" width="1200" height="900"></div>
     </div>
   </div>
 </section>
@@ -757,7 +747,7 @@ footer{background:var(--charcoal);border-top:1px solid var(--line);padding:46px 
 <section class="sec sec-dark" id="reviews">
   <div class="wrap">
     <div class="sec-head reveal">
-      <div class="sec-num">/ 06 &mdash; Reviews</div>
+      <div class="sec-num">/ 06 - Reviews</div>
       <h2 class="display">What our clients say</h2>
     </div>
     <div class="reviews-box reveal">
@@ -774,7 +764,7 @@ footer{background:var(--charcoal);border-top:1px solid var(--line);padding:46px 
     <div class="contact-grid">
       <!-- info -->
       <div class="contact-info reveal">
-        <div class="sec-num" style="color:var(--orange)">/ 07 &mdash; Get In Touch</div>
+        <div class="sec-num" style="color:var(--orange)">/ 07 - Get In Touch</div>
         <h2 class="display">Get a fast quote</h2>
         <p class="contact-intro">Call us on <a href="tel:+61433676716">+61 433 676 716</a> (6AM&ndash;5PM) or fill in the form and we&rsquo;ll get back to you within 1 business day. For urgent jobs, always call.</p>
         <div class="cinfo-row">
@@ -791,7 +781,7 @@ footer{background:var(--charcoal);border-top:1px solid var(--line);padding:46px 
         </div>
         <div class="cinfo-row" style="border-bottom:0">
           <span class="ci-ico" aria-hidden="true">&#9678;</span>
-          <div><small>Address</small><b>34 Shelley Rd, Moruya NSW 2537 &mdash; serving Eden to Ulladulla</b></div>
+          <div><small>Address</small><b>34 Shelley Rd, Moruya NSW 2537 - serving Eden to Ulladulla</b></div>
         </div>
       </div>
 
@@ -817,7 +807,7 @@ footer{background:var(--charcoal);border-top:1px solid var(--line);padding:46px 
             <!-- Web3Forms required: access key (REPLACE PLACEHOLDER WITH REAL KEY) -->
             <input type="hidden" name="access_key" value="5efb5a1e-0a57-4482-a81a-99aef39c1050">
             <!-- Web3Forms meta -->
-            <input type="hidden" name="subject" value="New quote request — A Plus Scaffolding">
+            <input type="hidden" name="subject" value="New quote request - A Plus Scaffolding">
             <input type="hidden" name="from_name" value="A Plus Scaffolding Website">
             <!-- Honeypot (spam trap) — must stay empty -->
             <input type="checkbox" name="botcheck" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
@@ -875,7 +865,7 @@ footer{background:var(--charcoal);border-top:1px solid var(--line);padding:46px 
 
       <!-- success panel (replaces form on success) -->
       <div class="form-success reveal" id="formSuccess" role="status">
-        <h3>Thanks &mdash; your request has been received.</h3>
+        <h3>Thanks - your request has been received.</h3>
         <p>We&rsquo;ll get back to you within 1 business day. For urgent jobs, call <a href="tel:+61433676716">+61 433 676 716</a>.</p>
       </div>
     </div>
